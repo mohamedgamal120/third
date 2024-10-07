@@ -875,7 +875,8 @@ transition: 0.3s;
   display: flex;
 }
 .subscribe form i{
-  
+  font-size: 100px;
+  color: red;
 }
 .subscribe form input [type="email"]{
 
