@@ -923,6 +923,15 @@ outline: none;
   display: flex;
   justify-content: space-between;
  }
+ @media(max-width:767px){
+  .contact .content{
+    flex-direction: column;
+    
+  }
+  .contact .content form input[type="submit"] {
+    left:56%;
+  }
+ }
  .contact .content form{
 flex-basis: 70%;
 position: relative;
@@ -947,13 +956,104 @@ position: relative;
   color: white;
   border: none;
   position: absolute;
-  left: 95%;
+  left: 90%;
   padding: 20px;
   cursor: pointer;
 
  }
-/* end subscribe */
+ @media(max-width:767px){
+ 
+  .contact .content form input[type="submit"] {
+    left:56%;
+  }
+ }
+ .contact .content .info{
+  flex-basis: 25% ;
+ }
+ @media(max-width:767px){
+ 
+  .contact .content .info{ 
+      order: -1;
+      text-align: center;
+  }
+ }
+ .contact .content .info h4{
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 18px;
+ }
 
+.contact .content .info h4:last-of-type {
+  margin-top:90px ;
+}
+@media(max-width:767px){.contact .content .info h4:last-of-type {
+  margin-top:30px ;
+}}
+ .contact .content .info .phone{
+  color: #777;
+  display: block;
+  margin-bottom: 10px;
+ }
+ .contact .content .info address{ 
+ color: #777;
+ line-height: 2;
+ }
+ @media(max-width:767px){
+  .contact .content .info address{ 
+    margin-bottom: 40px;
+  }
+ }
+
+/* end subscribe */
+/* start footer */
+.footer{
+  padding-top: calc(var(--section-padding) /2);
+  padding-bottom:calc( var(--section-padding) /2) ;
+  background-image: url("https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/subscribe.jpg");
+  background-size: cover;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+.footer::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 70%);
+}
+.footer .container{
+  position: relative;
+}
+.footer img{
+  margin-bottom: 20px;
+width: 270px;
+}
+.footer p:not(.copyright){
+  text-transform: uppercase;
+  padding: 20px;
+  border-bottom: 1px solid white;
+  font-size: 22px;
+  width: fit-content;
+  margin: 20px auto;
+
+}
+.footer .social-icons i{
+padding: 10px 15px;
+}
+.footer .copyright{
+  margin-top: 60px;
+}
+.footer .copyright span{
+font-weight: bold;
+color: var(--main-color);
+}
+
+
+/* end footer */
 
 
 
